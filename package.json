@@ -1,0 +1,16 @@
+{
+  "name": "dynamo-ts",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.ts",
+    "migrate": "node src/migrate.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.808.0",
+    "@aws-sdk/lib-dynamodb": "^3.808.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
+  }
+}
