@@ -1,6 +1,7 @@
 {
   "name": "dynamo-ts",
   "type": "module",
+  "main": "./src/index.ts",
   "scripts": {
     "test": "node --test **/**.test.ts"
   },
