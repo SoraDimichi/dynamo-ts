@@ -2,6 +2,9 @@
   "name": "dynamo-ts",
   "type": "module",
   "main": "./src/index.ts",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "test": "node --test **/**.test.ts"
   },
