@@ -19,7 +19,6 @@ export const transact = (docClient: DynamoDBDocumentClient) => async (props: Tra
 
   const createdAt = new Date().toISOString()
 
-  const debit = type === 'debit'
 
   const Put = {
     TableName: TRANSACTIONS,
@@ -27,6 +26,7 @@ export const transact = (docClient: DynamoDBDocumentClient) => async (props: Tra
     ConditionExpression: "attribute_not_exists(idempotentKey)"
   }
 
+  const debit = type === 'debit'
   const Update = {
     TableName: BALANCES,
     Key: { id: userId },
