@@ -13,3 +13,4 @@
 .env
 .pnp.*
 node_modules
+tsconfig.tsbuildinfo
